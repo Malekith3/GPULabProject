@@ -1,0 +1,2 @@
+quit -sim
+vdel -all
