@@ -1,12 +1,12 @@
 
 echo Start of Simulation
 
-set path_to_sim_lib C:/source/VHDL/Lab3_Hamming_code
+set path_to_sim_lib C:/Software_Projects/GPU_Lab_Project_Hardware_Design/GPULabProject
 
 # your project ordered file list
-set file_list [list  "ROM.vhd"]
+set file_list [list  "ROM.vhd" "raw2mif.vhd"]
 # your project top level
-set top_level work.ROM
+set top_level work.raw2mif
 # set run time at online by user- (full flow control)
 #puts "Set the simulation runtime including time units"
 set run_time "300 ns"
@@ -21,5 +21,5 @@ vsim -title $top_level $top_level
 # for simulation with wave configuration script
 #do wave.do
 # general case
-add wave -r *
+# add wave -r *
 run $run_time
