@@ -5,7 +5,7 @@ USE ieee.std_logic_1164.all;
 LIBRARY altera_mf;
 USE altera_mf.altera_mf_components.all;
 
-ENTITY Rom IS
+ENTITY ROM IS
 	generic 
 	(
 		data_size : integer;
@@ -18,13 +18,11 @@ ENTITY Rom IS
 		clock		: IN STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (data_size-1 DOWNTO 0)
 	);
-END Rom;
+END ROM;
 
 
-ARCHITECTURE SYN OF Rom IS
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (data_size-1 DOWNTO 0);
+ARCHITECTURE SYN OF ROM IS	
 BEGIN
-	q    <= sub_wire0(data_size-1 DOWNTO 0);
 	
 	altsyncram_component : altsyncram
 	GENERIC MAP (
@@ -46,7 +44,7 @@ BEGIN
 	PORT MAP (
 		address_a => address,
 		clock0 => clock,
-		q_a => sub_wire0
+		q_a => q
 	);
 
 
