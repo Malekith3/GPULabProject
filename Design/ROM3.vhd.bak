@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 PACKAGE heap_arr_pkg IS
     type output_array is array (natural range <>) of std_logic_vector (1279 downto 0);
-    type mif_files is array (natural range <>) of string (1 to 10);
+    type mif_files is array (natural range <>) of string (18 downto 1);
 END; 
 
 LIBRARY altera_mf;
@@ -18,7 +18,7 @@ generic
 	(
 		data_size1 : integer;
 		addr_size1 : integer;
-		mem_files : mif_files(1 to 3)
+		mem_files : mif_files(1 to 3);
 	);
 
 	port (

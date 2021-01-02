@@ -16,7 +16,7 @@ ENTITY ROM IS
 	(
 		address		: IN STD_LOGIC_VECTOR (addr_size-1 DOWNTO 0);
 		clock		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (data_size-1 DOWNTO 0)
+		q			: OUT STD_LOGIC_VECTOR (data_size-1 DOWNTO 0)
 	);
 END ROM;
 
