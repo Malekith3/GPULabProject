@@ -1,14 +1,7 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
-PACKAGE heap_arr_pkg IS
-    type output_array is array (natural range <>) of std_logic_vector (1279 downto 0);
-    type mif_files is array (natural range <>) of string (1 to 10);
-END; 
-
 LIBRARY altera_mf;
 USE altera_mf.altera_mf_components.all;
 
-USE work.heap_arr_pkg.all;
+USE work.SpecialArrays.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 

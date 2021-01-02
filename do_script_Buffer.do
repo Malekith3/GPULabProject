@@ -4,9 +4,9 @@ echo Start of Simulation
 #set path_to_sim_lib C:/Software_Projects/GPU_Lab_Project_Hardware_Design/GPULabProject
 
 # your project ordered file list
-set file_list [list  "Packages/SpecialArraysPKG.vhd" "Design/ROM.vhd" "Design/ROM3.vhd" "Test/ROM3_TB.vhd"]
+set file_list [list  "Packages/SpecialArraysPKG.vhd" "Design/BufferGPU.vhd" "Test/Buffer_TB.vhd"]
 # your project top level
-set top_level work.ROM3_TB
+set top_level work.Buffer_TB
 # set run time at online by user- (full flow control)
 #puts "Set the simulation runtime including time units"
 set run_time "300 ns"

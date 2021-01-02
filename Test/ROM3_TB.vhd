@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
-USE work.heap_arr_pkg.all;
+USE work.SpecialArrays.all;
 
 entity ROM3_TB is 
 end ROM3_TB;
