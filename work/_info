@@ -1,0 +1,246 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Software_Projects/GPU_Lab_Project_Hardware_Design/GPULabProject
+Eram
+Z1 w1609674649
+Z2 DPx9 altera_mf 20 altera_mf_components 0 22 @6M>I48X_jBQDo@?W=TN93
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8Design/RAM.vhd
+Z6 FDesign/RAM.vhd
+l0
+L9
+VXFN`D]4=b:;<7QmWGz;zo2
+!s100 5i0_oiMlgA?UQom_oO0<22
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1609674986
+!i10b 1
+Z9 !s108 1609674986.000000
+Z10 !s90 -reportprogress|300|-93|-quiet|-work|work|Design/RAM.vhd|
+Z11 !s107 Design/RAM.vhd|
+!i113 1
+Z12 o-quiet -93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Asyn
+R2
+R3
+R4
+DEx4 work 3 ram 0 22 XFN`D]4=b:;<7QmWGz;zo2
+l30
+L26
+V_=bDjj56D_Z;HoS`ZINoM3
+!s100 C?G3Km0d^5]VPOb[Y9m2F3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eram3
+Z14 w1609674976
+Z15 DPx4 work 13 specialarrays 0 22 90@SaAB1Xf7><VQXmY^:41
+R3
+R4
+R2
+R0
+Z16 8Design/RAM3.vhd
+Z17 FDesign/RAM3.vhd
+l0
+L8
+VdaBB0[iG3FQJMKM9>75`Z2
+!s100 I=;_`9JF@J4GBC`kBdH>:1
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-quiet|-work|work|Design/RAM3.vhd|
+Z19 !s107 Design/RAM3.vhd|
+!i113 1
+R12
+R13
+Aram3_arc
+R15
+R3
+R4
+R2
+DEx4 work 4 ram3 0 22 daBB0[iG3FQJMKM9>75`Z2
+l45
+L25
+VDMT;[E:5=S`WX27ejM[H<2
+!s100 01KOz]E=k6nkQ[DfafEXB0
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Erom
+Z20 w1609609755
+R2
+R3
+R4
+R0
+Z21 8Design/ROM.vhd
+Z22 FDesign/ROM.vhd
+l0
+L7
+VEX4dSb0W=5UVo;>BUjLnM0
+!s100 bjoz09<O^d6Z=Gjb;34hP2
+R7
+31
+Z23 !s110 1609611746
+!i10b 1
+Z24 !s108 1609611746.000000
+Z25 !s90 -reportprogress|300|-93|-quiet|-work|work|Design/ROM.vhd|
+Z26 !s107 Design/ROM.vhd|
+!i113 1
+R12
+R13
+Asyn
+R2
+R3
+R4
+DEx4 work 3 rom 0 22 EX4dSb0W=5UVo;>BUjLnM0
+l24
+L23
+VE<;mW_Fdi^I92j9JQog0A1
+!s100 zV>H==n;X=6]CY[MbcNcY3
+R7
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Erom3
+R20
+Z27 DPx4 work 13 specialarrays 0 22 ZznRM3OadL<I=7BHWKMnW2
+R3
+R4
+R2
+R0
+Z28 8Design/ROM3.vhd
+Z29 FDesign/ROM3.vhd
+l0
+L8
+V][:YT@2?5I]WRmPZ;n8Xe1
+!s100 M]09XNo8U6=MdehC]?J9R0
+R7
+31
+R23
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-93|-quiet|-work|work|Design/ROM3.vhd|
+Z31 !s107 Design/ROM3.vhd|
+!i113 1
+R12
+R13
+Arom3_arc
+R27
+R3
+R4
+R2
+DEx4 work 4 rom3 0 22 ][:YT@2?5I]WRmPZ;n8Xe1
+l44
+L26
+VkOT[YgT0XWKEcZE1BCRfU3
+!s100 ]Q18ReKljD7CLeYMeRaCP3
+R7
+31
+R23
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R12
+R13
+Erom3_tb
+R20
+R27
+Z32 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z33 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z34 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R0
+Z35 8Test/ROM3_TB.vhd
+Z36 FTest/ROM3_TB.vhd
+l0
+L7
+V<3kd`157SR7nz;o@O8>M02
+!s100 P>;;7=7k_T;3bE@[Q:9Oe0
+R7
+31
+R23
+!i10b 1
+R24
+Z37 !s90 -reportprogress|300|-93|-quiet|-work|work|Test/ROM3_TB.vhd|
+Z38 !s107 Test/ROM3_TB.vhd|
+!i113 1
+R12
+R13
+Arom3_tb_arch
+R27
+R32
+R33
+R34
+R3
+R4
+DEx4 work 7 rom3_tb 0 22 <3kd`157SR7nz;o@O8>M02
+l32
+L10
+V>iB253eVkB]d]Wm2gcQo^3
+!s100 i?a;H?J5GeMU58XGX`2cR3
+R7
+31
+R23
+!i10b 1
+R24
+R37
+R38
+!i113 1
+R12
+R13
+Pspecialarrays
+R3
+R4
+w1609674806
+R0
+8Packages/SpecialArraysPKG.vhd
+FPackages/SpecialArraysPKG.vhd
+l0
+L3
+V90@SaAB1Xf7><VQXmY^:41
+!s100 SlN4590cEXmV5`[<97EE72
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-quiet|-work|work|Packages/SpecialArraysPKG.vhd|
+!s107 Packages/SpecialArraysPKG.vhd|
+!i113 1
+R12
+R13

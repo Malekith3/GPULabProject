@@ -18,9 +18,9 @@ begin
 
 		if (rst = '1') then
 			Zeros : for i in 1 to 3 loop
-				Prev_row(i) <= (others=>'0');
-				Curr_row(i) <= (others=>'0');
-				Next_row(i) <= (others=>'0');
+				Prev_row(i) <= (others=>'1');
+				Curr_row(i) <= (others=>'1');
+				Next_row(i) <= (others=>'1');
 			end loop;
 
 		elsif(rising_edge(clock)) then 
