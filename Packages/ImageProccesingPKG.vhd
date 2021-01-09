@@ -47,22 +47,22 @@ end Median2D;
 function Median   (arg: pixelArray(1 to 3)) return pixel is
 variable temp:	  pixel;
 begin
-	if (conv_integer(unsigned(arg(3)(1))) >= conv_integer(unsigned(arg(2)(1))) and conv_integer(unsigned(arg(3)(1))) <= conv_integer(unsigned(arg(1)(1)))) then
+	if (arg(3)(1)) >= (arg(2)(1)) and (arg(3)(1)) <= (arg(1)(1)) then
         temp:= arg(3);
 
-    elsif (conv_integer(unsigned(arg(3)(1))) >= conv_integer(unsigned(arg(1)(1))) and conv_integer(unsigned(arg(3)(1))) <= conv_integer(unsigned(arg(2)(1)))) then
+    elsif (arg(3)(1)) >= (arg(1)(1)) and (arg(3)(1)) <= (arg(2)(1)) then
         temp:= arg(3);
 
-    elsif (conv_integer(unsigned(arg(2)(1))) >= conv_integer(unsigned(arg(1)(1))) and conv_integer(unsigned(arg(2)(1)))<= conv_integer(unsigned(arg(3)(1)))) then
+    elsif (arg(2)(1)) >= (arg(1)(1)) and (arg(2)(1))<= (arg(3)(1)) then
        temp:= arg(2);
 
-    elsif (conv_integer(unsigned(arg(2)(1))) >= conv_integer(unsigned(arg(3)(1))) and conv_integer(unsigned(arg(2)(1))) <= conv_integer(unsigned(arg(1)(1)))) then
+    elsif (arg(2)(1)) >= (arg(3)(1)) and (arg(2)(1)) <= (arg(1)(1)) then
         temp:= arg(2);
 
-    elsif (conv_integer(unsigned(arg(1)(1))) >= conv_integer(unsigned(arg(2)(1))) and conv_integer(unsigned(arg(1)(1))) <= conv_integer(unsigned(arg(3)(1)))) then
+    elsif (arg(1)(1)) >= (arg(2)(1)) and (arg(1)(1)) <= (arg(3)(1)) then
         temp:= arg(1);
 
-    elsif (conv_integer(unsigned(arg(1)(1))) >= conv_integer(unsigned(arg(3)(1))) and conv_integer(unsigned(arg(1)(1))) <= conv_integer(unsigned(arg(2)(1)))) then
+    elsif (arg(1)(1)) >= (arg(3)(1)) and (arg(1)(1)) <= (arg(2)(1)) then
         temp:= arg(1);
 
     else

@@ -13,7 +13,7 @@ end MedianFilter;
 
 architecture MedianFilter_arc of MedianFilter is
 begin
-	process
+	process(Prev_row, Curr_row , Next_row)
 	variable Prev_row_zeropadded,Curr_row_zeropadded,Next_row_zeropadded: pixelArray(1 to 256+2);
 	variable rowToFilt: row3; 
 	begin

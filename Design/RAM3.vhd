@@ -8,9 +8,9 @@ use IEEE.std_logic_1164.all;
 entity RAM3 is
 	
 generic (
-    	INST_NAMES: INST_NAMES(1 to 3):=("RRAM","GRAM","BRAM");
-    	data_size : integer:=1280;
-		addr_size : integer:=8
+    	INST_NAMES: INST_NAMES(1 to 3);
+    	data_size : integer;
+		addr_size : integer
     	);
 
 	port (
