@@ -4,9 +4,9 @@ echo Start of Simulation
 #set path_to_sim_lib C:/Software_Projects/GPU_Lab_Project_Hardware_Design/GPULabProject
 
 # your project ordered file list
-set file_list [list  "Packages/SpecialArraysPKG.vhd" "Design/BufferGPU.vhd" "Test/Buffer_TB.vhd"]
+set file_list [list  "Packages/SpecialArraysPKG.vhd" "Packages/ImageProccesingPKG.vhd" "Design/MedianFilter.vhd"]
 # your project top level
-set top_level work.Buffer_TB
+set top_level work.MedianFIlter
 # set run time at online by user- (full flow control)
 #puts "Set the simulation runtime including time units"
 set run_time "300 ns"
@@ -21,5 +21,5 @@ vsim -title $top_level $top_level
 # for simulation with wave configuration script
 #do wave.do
 # general case
-add wave *
+#add wave *
 run $run_time

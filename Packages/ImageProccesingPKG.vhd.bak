@@ -1,0 +1,73 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;        -- for addition & counting
+use ieee.std_logic_arith.all;
+
+
+PACKAGE ImageProcessing IS
+	type pixel  		is array (1 to 1) 			of std_logic_vector(4 downto 0);
+	type pixelArray 	is array (natural Range <>) of pixel;
+	type row3			is array (1 to 3)			of pixelArray(1 to 256+2);
+    type Mat3X3 		is array (1 to 3) of pixelArray(1 to 3);
+    function Median2D 	 (arg: Mat3X3) 				 return pixel;
+    function Median   	 (arg: pixelArray(1 to 3)) 	 return pixel;
+    function Median3Rows (arg: row3) 				 return pixelArray;
+END;
+
+
+Package Body ImageProcessing is
+
+function Median3Rows (arg: row3) return pixelArray is
+variable row: 			pixelArray(1 to 256);
+variable tempMat:		Mat3X3;
+begin
+
+ for i in 1 to 256 loop 				--pixels loop
+	 for j in 1 to 3 loop 				--rows loop
+		tempMat(j) := arg(j)(i to i+2);
+	end loop;
+
+	row(i) := Median2D(tempMat);
+end loop;
+
+	return row;
+end Median3Rows;
+
+function Median2D (arg: Mat3X3) return pixel is
+variable buff: pixelArray(1 to 3);
+begin
+	 for i in 1 to 3 loop
+		buff(i) := Median(arg(i))
+	end loop;
+	return Median(buff);
+end Median2D;
+
+function Median   (arg: pixelArray(1 to 3)) return pixel is
+variable temp:	  pixel;
+begin
+	if (arg(3) >= arg(2) and arg(3) <= arg(1)) then
+        temp:= arg(3);
+
+    elsif (arg(3) >= arg(1) and arg(3) <= arg(2)) then
+        temp:= arg(3);
+
+    elsif (arg(2) >= arg(1) and arg(2) <= arg(3)) then
+       temp:= arg(2);
+
+    elsif (arg(2) >= arg(3) and arg(2) <= arg(1)) then
+        temp:= arg(2);
+
+    elsif (arg(1) >= arg(2) and arg(1) <= arg(3)) then
+        temp:= arg(1);
+
+    elsif (arg(1) >= arg(3) and arg(1) <= arg(2)) then
+        temp:= arg(1);
+
+    else
+        temp:= arg(1);
+    end if;
+
+	return temp;	
+end Median;
+END Package Body ImageProcessing;
+
